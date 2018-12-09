@@ -1,0 +1,19 @@
+<div class="container">
+
+
+    <div class="api-container">
+        Los cards son: 
+
+        <mat-form-field>
+            <mat-select placeholder="cards from trello">
+              <mat-option *ngFor="let option of cards" [value]="option.name">
+                {{option.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <button (click) = "getTrello()">
+        Click here to connect with trello!
+    </button>
+
+</div>
